@@ -1,0 +1,494 @@
+
+html,
+body {
+  font-family: "Helvetica neue", "Playfair Display", Manrope;
+  font-size: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+#navbar {
+  font-family: Manrope;
+  text-align: center;
+  color: #000000;
+  margin-top: 50px;
+  height: 300px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline;
+  font-size: 0.9em;
+  padding-bottom: 30px;
+}
+
+.dropdown-list {
+  font-family: "Manrope";
+  position: absolute;
+  display: none;
+  width: auto;
+  text-align: left;
+  line-height: 30px;
+  background-color: #ebecf0;
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.2);
+  padding: 10px 10px 10px 10px;
+  z-index: 1;
+  left: -5px;
+  white-space: nowrap;
+}
+
+.dropdown:hover > .dropdown-list {
+  text-decoration: none;
+  color: red;
+  display: block;
+  margin-top: 10px;
+}
+
+.dropdown > a {
+  list-style-type: none;
+  font-size: 0.84em;
+  padding-left: 5px;
+  padding-right: 57px;
+  text-decoration: none;
+  letter-spacing: 0.3px;
+  color: black;
+}
+
+.dropdown-list > a {
+  font-size: 0.84em;
+  text-decoration: none;
+  letter-spacing: 0.3px;
+  color: black;
+}
+
+.dropdown a:hover {
+  color: red;
+}
+
+.dropdown a:active {
+  color: blue;
+}
+
+.loginbuttons {
+  position: relative;
+  font-family: "Playfair display";
+  font-style: italic;
+  text-align: right;
+  margin-right: 130px;
+}
+
+.loginimg {
+  position: relative;
+  width: 20%;
+  top: 10px;
+}
+
+.loginbuttons > a {
+  font-size: 1.06em;
+  letter-spacing: 1px;
+  padding-right: 10px;
+  text-decoration: none;
+  color: #000;
+}
+
+.loginbuttons:hover {
+  opacity: 0.5;
+}
+
+#footer {
+  font-family: "Manrope";
+  text-align: center;
+  color: #000000;
+  margin: 400px 5px 30px 5px;
+  height: 100px;
+  font-size: 74%;
+}
+
+.social a img {
+  padding-left: 7px;
+  padding-right: 7px;
+  width: 20px;
+  margin-bottom: 15px;
+}
+
+.footerbtn {
+  margin-top: 50px;
+  margin-bottom: 25px;
+}
+
+.footerbtn > a {
+  position: relative;
+  color: black;
+  padding: 0px 68px 2px 68px;
+  margin-left: 10px;
+  margin-right: 15px;
+  border-color: black;
+  border-style: solid;
+  border-width: thin;
+  text-decoration: none;
+}
+
+.footerbtn > a:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+.main {
+  width: 100%;
+  display: block;
+  margin-top: 50px;
+  margin-bottom: 400px;
+}
+
+.images {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.images > img {
+  width: 33%;
+  display: block;
+}
+
+.images > img:hover {
+  opacity: 0.5;
+}
+
+.aboutimg > img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  width: 25%;
+}
+
+.aboutimg1 {
+  height: 400px;
+  width: 100%;
+  background-image: url(/images/barber.png);
+  clear: left;
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+  padding-top: 200px;
+  margin-top: 50px;
+}
+
+.aboutimg1 p {
+  display: block;
+  color: whitesmoke;
+  font-family: "Playfair display";
+  font-size: 56px;
+  text-align: center;
+}
+
+.aboutnazmie {
+  margin-top: 135px;
+  display: block;
+}
+
+.aboutnazmie > img {
+  float: right;
+  margin-right: 60px;
+  width: 640px;
+}
+
+.about {
+  margin-left: 30px;
+  width: 650px;
+}
+
+.aboutstudent {
+  height: 400px;
+  width: 100%;
+  background-image: url(/images/about_student_review.png);
+  clear: left;
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+  margin-top: 700px;
+  margin-bottom: 300px;
+}
+
+.aboutstudent p {
+  display: block;
+  color: whitesmoke;
+  font-family: "Playfair display";
+  font-size: 50px;
+  text-align: center;
+  padding-top: 130px;
+  margin: 0;
+}
+
+.aboutstudent p1 {
+  display: block;
+  color: white;
+  font-family: "Cormorant Garamond";
+  font-size: 30px;
+  font-style: oblique;
+  text-align: center;
+  padding-top: 15px;
+  letter-spacing: 1px;
+  transform: skewX(-30deg);
+}
+
+h1 {
+  text-align: center;
+  display: block;
+  font-family: "Playfair display";
+  font-size: 40px;
+  font-weight: 400;
+  color: #000000;
+  width: 70%;
+  margin: 35px auto 0px auto;
+  padding-top: 50px;
+}
+
+h2 {
+  font-family: "Manrope";
+  font-size: 1.6em;
+  font-weight: 600;
+  color: #e6400b;
+  width: 92%;
+  margin: 85px auto 45px auto;
+}
+
+h3 {
+  font-family: "Cormorant garamond";
+  font-weight: 300;
+  font-style: italic;
+  font-size: 30px;
+}
+
+h4 {
+  margin: 20px 0 20px 0;
+  text-align: center;
+  font-family: "Cormorant garamond";
+  font-weight: 300;
+  font-style: italic;
+  font-size: 30px;
+}
+
+h5 {
+  font-family: "Roboto";
+  color: #666666;
+  position: relative;
+  margin-left: 165px;
+  font-size: 33px;
+  font-style: italic;
+  font-weight: 600;
+}
+
+.paragraph {
+  display: block;
+  font-family: "Playfair Display";
+  font-size: 0.84rem;
+  line-height: 30px;
+  color: #000000;
+  width: 92%;
+  margin: auto;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.center-80 {
+  width: 80%;
+  text-align: center;
+  line-height: 40px;
+  padding-top: 15px;
+}
+
+.paragraphcenter {
+  font-family: "Playfair Display";
+  font-size: 0.97em;
+  letter-spacing: 0.05rem;
+  color: black;
+  margin: auto;
+  margin-top: 40px;
+  text-align: center;
+  line-height: 15px;
+}
+
+.subscribe {
+  display: block;
+  width: 1200px;
+  padding-left: 100px;
+  margin: 200px auto 0px auto;
+}
+
+.email {
+  display: flex;
+  margin-right: 250px;
+  border-bottom: solid;
+}
+
+.email > img {
+  width: 2%;
+  padding: 20px 5px 10px 15px;
+}
+
+.email > input {
+  color: black;
+  border: 0;
+  padding: 10px 0 0px 20px;
+  margin-left: 10px;
+  width: 100%;
+  font-size: 24px;
+  font-family: "Cormorant garamond";
+}
+
+input::-moz-placeholder {
+  color: #343a40;
+}
+
+input:-ms-input-placeholder {
+  color: #343a40;
+}
+
+input::-ms-input-placeholder {
+  color: #343a40;
+}
+
+input::placeholder {
+  color: #343a40;
+}
+
+.submitbtn {
+  float: right;
+  margin-right: 20px;
+  width: 200px;
+}
+
+.submitbtn > input {
+  font-family: "Cormorant garamond";
+  position: relative;
+  background-color: black;
+  font-size: 25px;
+  color: white;
+  padding: 13px 27px 13px 27px;
+  bottom: 9px;
+}
+
+.maingdpr {
+  display: block;
+  width: 100%;
+  min-width: 60%;
+  margin: 50px 0px 0px 0px;
+  height: auto;
+}
+
+.gdprimage {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+.gdprimage > img {
+  display: block;
+  width: 50%;
+  margin: 0;
+}
+
+.gdprtext {
+  width: 600px;
+  position: absolute;
+  font-family: "Roboto";
+  font-size: 45px;
+  font-weight: 600;
+  color: #CF131F;
+  text-align: left;
+  padding-top: 150px;
+  padding-left: 51.5%;
+  text-justify: inter-word;
+  z-index: 1;
+}
+
+.gdprparagraph {
+  color: #666666;
+  display: block;
+  font-family: "Roboto";
+  font-size: 1.1rem;
+  line-height: 30px;
+  color: #000000;
+  width: 74.5%;
+  margin-left: 240px;
+  margin-right: 160px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.contactred {
+  height: 500px;
+  width: 100%;
+  background-image: url(/images/contactred.png);
+  clear: left;
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+  margin-top: 0;
+}
+
+.program {
+  position: relative;
+  width: 80%;
+  margin: 100px auto 50px auto;
+}
+
+program > img {
+  width: 100%;
+  height: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.halfhexagon {
+  position: absolute;
+  height: 250px;
+  width: auto;
+  padding: 100px;
+  fill: white;
+  stroke: white;
+  stroke-width: 0;
+}
+
+h6 {
+  position: absolute;
+  color: black;
+  width: 370px;
+  margin-top: 0px;
+  top: 0px;
+  margin-left: 0;
+  font-family: "Playfair display";
+  font-weight: 400;
+  font-size: 45px;
+}
+
+.halfhexagon > svg {
+  position: absolute;
+  align-content: center;
+  margin: 0;
+  width: 370px;
+  height: 250px;
+}
+
+.halfhexagon > ol {
+  position: absolute;
+  color: black;
+  width: 370px;
+  margin-left: -40px;
+  margin-right: 0;
+  margin-top: 70px;
+  list-style-type: none;
+  font-family: "Caudex";
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.halfhexagon ol li {
+  position: absolute;
+  line-height: 35px;
+  margin-left: 0;
+  padding-left: 0px;
+}
+
