@@ -8,6 +8,12 @@ use Illuminate\Http\Request;
 class LoginController extends Controller
 {
    public function showLoginForm(){
-    return view("authPages/login");
+      return view("authPages/login");
    }
+   
+   public function login(){
+
+      return "hellow world";
+     
+  }
 }

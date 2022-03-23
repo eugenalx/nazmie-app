@@ -8,7 +8,9 @@
         @csrf
         <div class="form-group row">
             <div class="col-sm-10 col-md-6 mx-auto mb-2">
-                <input id="email" type="email" class="form-control border-0 border-bottom  @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus placeholder={{ __('E-Mail Address') }}>
+                <input id="email" type="email" class="form-control border-0 border-bottom @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" 
+                required ="email" 
+                autofocus placeholder={{ __('E-Mail Address') }}>
 
                 @error('email')
                 <span class="invalid-feedback" role="alert">
@@ -17,10 +19,12 @@
                 @enderror
             </div>
         </div>
-
+        @csrf
         <div class="form-group row">
             <div class="col-sm-10 col-md-6 mx-auto  mb-2">
-                <input id="password" type="password" class="form-control border-0 border-bottom @error('password') is-invalid @enderror" name="password" required autocomplete="current-password" placeholder ={{ __('Password') }}>
+                <input id="password" type="password" class="form-control border-0 border-bottom @error('password') is-invalid @enderror" name="password" 
+                required ="current-password" 
+                placeholder ={{ __('Password') }}>
 
                 @error('password')
                 <span class="invalid-feedback" role="alert">
@@ -31,7 +35,7 @@
         </div>
 
         <div class="form-group row">
-            <div class="col-sm-10 col-md-6 mx-auto">
+            <div class="col-sm-10 col-md-6 mx-auto ">
                 <div class="form-check">
                     <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
 
@@ -59,7 +63,7 @@
                 @endif
                 @if (Route::has('register'))
                     <a class="btn btn-link custom-forgot-your-password col-6 " href="{{ route('register') }}">
-                        {{ __('Or Register Now') }}
+                        {{ __('Register Now') }}
                     </a>
                 @endif
             </div>

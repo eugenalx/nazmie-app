@@ -122,7 +122,7 @@
             color: orange;
         }
       
-        .loginbuttons {
+        .login-buttons {
             position: relative;
             font-family: "Playfair display";
             font-style: italic;
@@ -191,11 +191,24 @@
             color: #6c757d;
             opacity: 0.8;
             font-style: italic;
-            font-size: 80%;
+            font-size: 90%;
         }
         .custom-btn{
             background-color: fuchsia
         }
+        .navbar-toggler-icon {
+            display: inline-block;
+            width: 0.8em;
+            height: 0.8em;
+            vertical-align: middle;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 100%;
+            }
+
+            .dropdown-staple a{
+                text-decoration: none;
+            }
        </style>
  
 </head>
