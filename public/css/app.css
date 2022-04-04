@@ -11304,9 +11304,11 @@ body {
 
 .dropdown {
   position: relative;
-  display: inline;
+  /* display: inline; */
   font-size: 0.9em;
   padding-bottom: 30px;
+  display: flex !important;
+ 
 }
 
 .dropdown-list {
@@ -11339,6 +11341,7 @@ body {
   text-decoration: none;
   letter-spacing: 0.3px;
   color: black;
+  
 }
 
 .dropdown-list > a {

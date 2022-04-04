@@ -131,7 +131,7 @@
 
         .loginimg {
         position: relative;
-        width: 20%;
+        width: 25px;
         top: 10px;
         padding-bottom: 10px;
         }
@@ -197,32 +197,62 @@
             background-color: fuchsia
         }
         .navbar-toggler-icon {
-            display: inline-block;
+            display: flex;
             width: 0.8em;
             height: 0.8em;
-            vertical-align: middle;
             background-repeat: no-repeat;
             background-position: center;
             background-size: 100%;
+            
             }
 
             .dropdown-staple a{
                 text-decoration: none;
             }
+
+            
+
+
+        @media screen and (min-width:990px){
+            .stickyHeader{
+                position: -webkit-sticky;
+                position: sticky;
+                top:0%;
+                z-index: 999;
+                min-height: 60px;
+                margin-top: 20px;
+            }
+
+            .navbar{
+                
+                height:60px;
+                margin-top: 20px;
+            }
+        }
+
+
+            @media screen and (max-width:990px){
+                .stickyHeader{
+                    z-index: 999;
+                    margin:0 auto;
+                }
+            }
        </style>
  
 </head>
 
-<body >
-    
-            <x-pages.header/>
-       
-
-            <br>
-            @yield("content")
-      
-            <x-pages.footer/>
- 
+<body>
+    <div>
+        <div class="stickyHeader">
+                <x-pages.header/>
+        </div>
+        <div class="col-sm-6 col-md-6 mx-auto align-self-center">
+            <img src="/images/logo.jpg" style="width:60%;">
+        </div>
+                @yield("content")
+        
+                <x-pages.footer/>
+    </div>
    
 </body>
 </html>

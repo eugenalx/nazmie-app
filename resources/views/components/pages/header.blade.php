@@ -1,19 +1,25 @@
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-   
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+<nav class="navbar navbar-expand-lg navbar-light bg-light d-lg-flex flex-lg-column">
     
-    <div class="mt-4 collapse navbar-collapse" id="navbarNavDropdown">
-        <div class="col-12 mx-auto navbar-nav">
-            <div class="dropdown nav-item">
+        <button class="navbar-toggler align-self-start " type<button class="navbar-toggler align-self-start  col-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <div class="navbar-toggler-icon d-block  "></div>
+          </button>="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <div class="navbar-toggler-icon d-block  "></div>
+        </button>
+    
+    <span class="col-2 d-flex d-lg-none mr-auto">
+        <x-pages.auth.auth/> 
+      </span> 
+    
+    <div class="collapse navbar-collapse " id="navbarNavDropdown">
+        <div class="col-12 navbar-nav">
+            <div class="dropdown nav-item d-flex align-items-center">
                 <a class="" href="#" >Acasa</a>
             </div>
-            <div class="dropdown nav-item">
+            <div class="dropdown nav-item d-flex align-items-center">
                 <a href="#" >Despre noi</a>
             </div>
-            <div class="dropdown nav-item">
+            <div class="dropdown nav-item d-flex align-items-center">
                 <a class="dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 
                Salon</a>
@@ -24,21 +30,25 @@
                         <p><a href="#" >Oferte speciale</a></p>
                     </div>
             </div>
-            <div class="dropdown">
+            <div class="dropdown d-flex align-items-center">
                 <a href="#">Academy</a>
                     <div class="dropdown-staple">
                         <p><a href="#">Cursuri</a></p>
                         <p><a href="#">Inscrieri</a><p>
                     </div>
             </div> 
-            <div class="dropdown">
+            <div class="dropdown d-flex align-items-center">
                     <a href="#">Contact</a>
             </div>        
-            <div class="dropdown">        
+            <div class="dropdown d-flex align-items-center">        
                     <a href="#">Blog</a>
             </div>        
-        </div>       
+        </div> 
+        <div class="col-2 d-flex flex-column align-items-center justify-content-center">
+            <x-pages.auth.auth/> 
+        </div>  
     </div> 
+   
 </nav>
 
   

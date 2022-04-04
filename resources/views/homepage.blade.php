@@ -1,10 +1,9 @@
 @extends('components.layout')
-{{-- <x-homepage>Hello Mama</x-homepage> --}}
 
 
 
 @section('content')
-<x-pages.auth.auth/>
+
 
 <div class="row m-0 p-0">
     <div class="col-4 p-0">
