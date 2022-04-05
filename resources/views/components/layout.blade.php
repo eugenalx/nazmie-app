@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300&family=Raleway:wght@100;200;300&family=Roboto:ital,wght@0,100;0,300;1,100;1,300&display=swap" rel="stylesheet">        
         <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Manrope:wght@700;800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap" rel="stylesheet">
-       
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
     <script src="{{ asset('js/customApp.js') }}" defer></script>
@@ -75,13 +75,20 @@
         }
         
         .m-b-md {
-            margin-bottom: 30px;
+            /* margin-bottom: 30px; */
         }
+
+        .dropdown {
+            position: relative;
+            display: inline;
+            font-size: 0.9em;
+            padding-bottom: 0;
+            }
         
         .dropdown>a {
             color: #000000;
             padding: 0 28px;
-            margin-top: 25px;
+            /* margin-top: 25px; */
             font-size: 19px;
             font-weight: initial;
             text-decoration: none;
@@ -104,7 +111,7 @@
             line-height: 20px;
             background-color: #ebecf0;
             box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-            padding: 20px 5px 5px 10px;
+            padding: 0 5px 0px 10px;
             z-index: 1;
         
         }
@@ -223,18 +230,17 @@
                 margin-top: 20px;
             }
 
-            .navbar{
-                
-                height:60px;
-                margin-top: 20px;
-            }
+           
         }
 
 
             @media screen and (max-width:990px){
                 .stickyHeader{
+                    position: -webkit-sticky;
+                    position: sticky;
+                    top:0%;
                     z-index: 999;
-                    margin:0 auto;
+                    margin-top: 20px;
                 }
             }
        </style>

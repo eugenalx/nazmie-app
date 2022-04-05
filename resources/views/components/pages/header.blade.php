@@ -3,13 +3,13 @@
     
         <button class="navbar-toggler align-self-start " type<button class="navbar-toggler align-self-start  col-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <div class="navbar-toggler-icon d-block  "></div>
-          </button>="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <div class="navbar-toggler-icon d-block  "></div>
-        </button>
+          </button>
     
-    <span class="col-2 d-flex d-lg-none mr-auto">
-        <x-pages.auth.auth/> 
-      </span> 
+    
+    <span class="col-2 d-flex d-lg-none mr-auto align-items-center justify-content-around">
+        <x-pages.auth.auth/>  
+        <i class="fa-solid fa-magnifying-glass ml-3"></i> 
+   </span> 
     
     <div class="collapse navbar-collapse " id="navbarNavDropdown">
         <div class="col-12 navbar-nav">
@@ -44,8 +44,9 @@
                     <a href="#">Blog</a>
             </div>        
         </div> 
-        <div class="col-2 d-flex flex-column align-items-center justify-content-center">
+        <div class="col-2 d-flex align-items-center justify-content-around">
             <x-pages.auth.auth/> 
+            <i class="fa-solid fa-magnifying-glass"></i>     
         </div>  
     </div> 
    
