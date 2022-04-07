@@ -33,8 +33,8 @@
     <div class="col-4 p-0">
         <img src="/images/9.jpg" >
     </div>
-    <h1 style='margin-top: 90px'> Salonul - Servicii oferite </h1>
-    <p style="font-family: 'Playfair Display'; font-size: 16px; line-height: 23px;color: #000000; margin:28px;">Nazmie Hair Academy & more este un salon-concept 
+    <h1 class="mt-5 mb-3" > Salonul - Servicii oferite </h1>
+    <p class="col-10 flex-center mx-auto" style="font-family: 'Playfair Display'; font-size: 20px; line-height: 30px; letter-spacing: 0.05rem ; color: #000000; ">Nazmie Hair Academy & more este un salon-concept 
         de suflet, deschis în mijlocul Bucureștiului, de către Nazmie, un hairstylist cu zeci de ani
         de experientă și o pasiune contagioasă pentru beauty și tot ce ține de acest domeniu vibrant
         și plin de culoare. Formandu-și o echipă de profesioniști și alegând cu grijă produse organice

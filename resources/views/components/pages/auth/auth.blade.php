@@ -1,7 +1,7 @@
-<div class="row col-12 ">
-    <div class="col-sm-3 col-md-2 "></div>   
+<div class="col-2">
+       
     
-    <div class="col-sm-3 col-md-2 mb-2 align-self-md-center align-self-sm-center d-flex">
+    <div class=" mb-2 align-self-center d-flex">
         @if (Route::has('login'))
         
         <div class="login-buttons-sm login-buttons mx-auto text-center" style="font-family: Times New Roman">

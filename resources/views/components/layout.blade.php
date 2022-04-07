@@ -10,8 +10,10 @@
         <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Manrope:wght@700;800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Scripts -->
+
+    
     <script src="{{ asset('js/app.js') }}" defer></script>
-    <script src="{{ asset('js/customApp.js') }}" defer></script>
+    
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
@@ -23,16 +25,16 @@
             color: #636b6f;
             font-family: 'Playfair Display', sans-serif;
             font-weight: 400;
-            height: 100vh;
-            margin: 0;
+            width: 100vw;
+            margin: 0; padding: 0%
         }
-        .full-height {
+        /* .full-height {
             height: 80vh;
-        }
+        } */
 
         .flex-center {
-            align-items: center;
             display: flex;
+            align-items: center;
             justify-content: center;
         }
         
@@ -46,7 +48,7 @@
     /* display: block; eliminates default white space*/
 
         figure {
-    margin: 0;
+            margin: 0;
         }
 
         .position-ref {
@@ -83,7 +85,7 @@
             display: inline;
             font-size: 0.9em;
             padding-bottom: 0;
-            }
+        }
         
         .dropdown>a {
             color: #000000;
@@ -106,7 +108,7 @@
             font-family: 'Manrope';
             position: absolute;
             display: none;
-            width:150px;
+            /* width:150px; */
             text-align: left;
             line-height: 20px;
             background-color: #ebecf0;
@@ -154,7 +156,6 @@
         .login-buttons-sm > a {
         font-size: 60%;
         letter-spacing: 1px;
-
         text-decoration: none;
         color: #000;
         }
@@ -173,7 +174,7 @@
     }
 
     .loginSlide{
-        width: 100px;
+        /* width: 100px; */
         background: rebeccapurple;
         animation: "mymove" 2s infinite;
     }
@@ -212,10 +213,54 @@
             background-size: 100%;
             
             }
-
             .dropdown-staple a{
                 text-decoration: none;
             }
+
+            .searchBarIcon{
+                 /* border: 2px solid black; */
+                ;                
+                border-radius: 10px;
+            }
+
+             .rightHeader  input{
+                width: 200px;
+                border: none;
+                font-size: 16px;
+                color: gray;
+                transform: translateX(100%) scaleX(0);
+                border-radius: 15px;
+                padding: 10px;
+                padding-bottom: 12px;
+                border-bottom: 1px solid gray;
+                margin-right: 15px;
+            }
+input:focus{
+    outline:none;
+}
+            
+          
+            .rightHeader{
+                margin-right: 30px;
+            }
+
+            .active{
+                display: block;
+                animation: searchBar 1s ease-in-out;
+                animation-fill-mode: both;
+             }
+            @keyframes searchBar {
+                    0%{
+                        transform: translateX(100%) scaleX(0);
+                    }
+                    100%{
+                        transform: translate(0%) scale(1);
+                    }
+                }
+
+                .pointerCursor{
+                    cursor: pointer;
+                }
 
             
 
@@ -241,24 +286,54 @@
                     top:0%;
                     z-index: 999;
                     margin-top: 20px;
-                }
+                }               
             }
        </style>
  
 </head>
 
-<body>
-    <div>
+<body >
+    <div class=''>
         <div class="stickyHeader">
-                <x-pages.header/>
-        </div>
+             <x-pages.header/> 
+        </div> 
         <div class="col-sm-6 col-md-6 mx-auto align-self-center">
-            <img src="/images/logo.jpg" style="width:60%;">
+            <img src="/images/logo.jpg" 
+            style="width:60%;"
+            >
         </div>
                 @yield("content")
         
-                <x-pages.footer/>
+                {{-- <x-pages.footer/> --}}
     </div>
+
+    <script>
+        function openNav() {
+    document.getElementById("loginSlide").style.marginLeft = "50%";
+  }
+  
+  function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+  }
+
+  
+  function searchInputFocus1Out(){
+    alert('removed');
+    var element = document.getElementById('searchInput1');
+    
+    element.classList.remove('active'); 
+  }
+
+   function searchInputFocus1(){
+    var element = document.getElementById('searchInput1');
+    element.classList.toggle('active'); 
+}
+
+ function searchInputFocus(){
+    var element = document.getElementById('searchInput');
+    element.classList.toggle('active'); 
+}
+    </script>
    
 </body>
 </html>

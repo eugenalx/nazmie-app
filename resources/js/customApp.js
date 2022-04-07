@@ -1,5 +1,5 @@
-require('./bootstrap');
-
+// let divMain = document.createElement("div");
+// divMain.onclick=function() {openNav()};
 
 
 function openNav() {
