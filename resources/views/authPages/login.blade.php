@@ -1,5 +1,4 @@
-@extends("components/layout")
-@section("content")
+<x-layout>
 
 {{-- <div class="loginSlide">teste</div> --}}
 
@@ -81,4 +80,4 @@
       
     </div>
   </div> --}}
-@endsection
+</x-layout>

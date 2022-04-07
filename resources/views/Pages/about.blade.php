@@ -1,16 +1,10 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        @extends('../components/layout')
-    </head>    
+<x-layout>
         
-    <body>
-        @section('content')
-        <main class="row m-0 p-0">
+        <main class="col-12  mt-5">
             <div class="aboutimg">
                 <img src="/images/about1.jpg"/>
             </div>
-            <h1>Despre noi, Cine Suntem</h1>
+            <h1 class=" my-3">Despre noi, Cine Suntem</h1>
             <div class=" aboutText col-10 flex-center mx-auto">Împărtășim cu voi cunoștințele pentru ca voi să deschideți ușile unei noi cariere.
                 Nazmie Hair Academy & more caută să sporească dezvoltarea elevilor săi pe parcursul
                întregii lor experiențe educaționale. Personalul nostru este alcătuit dintr-un grup 
@@ -60,10 +54,4 @@
         </main>
             
             
-            @endsection
-            
-        
-    </body>
-    
-    
-</html>
+    </x-layout>

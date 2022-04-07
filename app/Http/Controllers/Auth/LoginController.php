@@ -13,7 +13,7 @@ class LoginController extends Controller
    
    public function login(){
 
-      return "hellow world";
+      return view("authPages/login");
      
   }
 }

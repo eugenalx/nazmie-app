@@ -10,4 +10,8 @@ class RegisterController extends Controller
    public function showRegistrationForm(){
        return view("/authPages.register");
    }
+
+   public function create(){
+        return view("/authPages.register");
+}
 }

@@ -183,7 +183,7 @@
         to {left: 300px;}
         }
         .custom-card-login{
-            font-size: 70%;
+            font-size: 0.8rem;
             color: #6c757d;
             font-family: "Playfair Display";
             }
@@ -193,6 +193,7 @@
             color: #6c757d;
             opacity: 0.5;
             font-style: italic;
+            font-size: 0.8rem;
             }
 
         .custom-forgot-your-password{
@@ -304,23 +305,58 @@ input:focus{
                     margin-top: 20px;
                 }               
             }
+
+            h6{
+    position:  relative;
+    color: black;
+    width: 370px;
+    margin-top: 0px;
+    top: 0px;
+    font-family: 'Playfair display';
+    font-weight: 400;
+    font-size: 45px;
+}
+
+.halfhexagon>svg{
+    align-content: center;
+    width: 370px; 
+    height: 250px;
+}
+
+.halfhexagon>ol{
+    position: relative;
+    color: black;
+    width: 370px;
+    margin-left: -40px;
+    margin-right: 0;
+    margin-top: 70px;
+    list-style-type: none;
+    font-family: 'Caudex';
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.halfhexagon ol li{
+    line-height: 35px;
+    margin-left: 0;
+    padding-left: 0px;
+}
        </style>
  
 </head>
 
 <body >
-    <div class=''>
-        <div class="stickyHeader">
-             <x-pages.header/> 
+
+    
+    <div class=''> 
+        <div class="stickyHeader" >
+            <x-header />
         </div> 
-        <div class="col-sm-6 col-md-6 mx-auto align-self-center">
-            <img src="/images/logo.jpg" 
-            style="width:50%;"
-            >
-        </div>
-                @yield("content")
+
+        {{ $slot }}
+               
         
-                {{-- <x-pages.footer/> --}}
+        {{-- <x-pages.footer/> --}}
     </div>
 
     <script>
