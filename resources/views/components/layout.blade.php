@@ -204,6 +204,8 @@
         .custom-btn{
             background-color: fuchsia
         }
+
+
         .navbar-toggler-icon {
             display: flex;
             width: 0.8em;
@@ -262,6 +264,20 @@ input:focus{
                     cursor: pointer;
                 }
 
+                .aboutText{
+                    font-family: 'Playfair Display';
+                    font-size: 20px;
+                    line-height: 30px;
+                    letter-spacing: 0.05rem;
+                    color: #000000;
+                }
+                .aboutText::first-letter{
+                    font-size: 30px;
+                    margin-left: 15px;
+                    font-weight: 600;
+                }
+
+
             
 
 
@@ -299,7 +315,7 @@ input:focus{
         </div> 
         <div class="col-sm-6 col-md-6 mx-auto align-self-center">
             <img src="/images/logo.jpg" 
-            style="width:60%;"
+            style="width:50%;"
             >
         </div>
                 @yield("content")
@@ -308,14 +324,6 @@ input:focus{
     </div>
 
     <script>
-        function openNav() {
-    document.getElementById("loginSlide").style.marginLeft = "50%";
-  }
-  
-  function closeNav() {
-    document.getElementById("myNav").style.width = "0%";
-  }
-
   
   function searchInputFocus1Out(){
     alert('removed');

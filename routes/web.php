@@ -21,6 +21,10 @@ Route::get("login",function(){
     return view("authPages/login");
 })->name("login");
 
+Route::get("/about", function(){
+    return view("/pages/about");
+});
+
 // Route::get("password.request",function(){
 //     return view("authPages/login");
 // })->name("password.request");

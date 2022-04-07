@@ -20,10 +20,10 @@
             <div class="offset-2 col-8 collapse navbar-collapse mx-auto " id="navbarNavDropdown">
             <div class=" navbar-nav">
                 <div class="dropdown nav-item d-flex align-items-center">
-                    <a class="" href="#" >Acasa</a>
+                    <a class="" href="/" >Acasa</a>
                 </div>
                 <div class="dropdown nav-item d-flex align-items-center">
-                    <a href="#" >Despre noi</a>
+                    <a href="about" >Despre noi</a>
                 </div>
                 <div class="dropdown nav-item d-flex align-items-center">
                     {{-- <a class="dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"> --}}
