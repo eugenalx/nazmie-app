@@ -72,12 +72,5 @@
 </div>
 
 
-{{-- <div id="myNav" class="overlay">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <a href="javascript:void(0)" class="opennav"  id="Mynav" onclick="openNav()">About</a>
-    <div class="overlay-content">
-      <p a href="javascript:void(0)" class=""  id="Mynav" onclick="openNav()">About</p>
-      
-    </div>
-  </div> --}}
+
 </x-layout>

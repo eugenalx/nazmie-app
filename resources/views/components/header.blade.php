@@ -6,7 +6,7 @@
 
         <nav class="navbar navbar-expand-lg navbar-light bg-white d-lg-flex flex-center p-2 ">
             <div class=" col-12  d-flex d-lg-none  justify-content-between px-3">
-                <button class="navbar-toggler align-self-center" type<button class="navbar-toggler align-self-start  col-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler align-self-center  col-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <div class="navbar-toggler-icon d-block  "></div>
                 </button>
                 <div class="d-flex d-lg-none align-items-center justify-content-between">
@@ -60,31 +60,31 @@
                 <div class="align-items-center justify-content-around d-none d-lg-flex">
                     <div class="rightHeader searchBarIcon flex-center pointerCursor"  " > 
                         <input id="searchInput1" class="bg-white" type="text" placeholder="search...">
-                        <i class="fa-solid fa-magnifying-glass"  onclick="searchInputFocus1()"></i> 
+                        <i class="fa-solid fa-magnifying-glass" 
+                         onclick="searchInputFocus1()"
+                         ></i> 
                     </div>
                     <div class="rightHeader">
                         <x-auth.auth />     
                     </div>
                 </div>  
             </div>
-                
-            
-        </nav>
+         </nav>
 
-  
+  <script>
 
-<script src="/js/app.js">
+// window.searchInputFocus =  function(){
+//   var element = document.getElementById('searchInput');
+//   element.classList.toggle('active'); 
+// };
 
-// function searchInputFocus1(){
-//         var element = document.getElementById('searchInput1');
-//         element.classList.toggle('active'); 
-//     }
+// window.searchInputFocus1 =  function(){
+//   var element = document.getElementById('searchInput1');
+//   element.classList.toggle('active'); 
+// };
+  </script>
 
-//        function searchInputFocus(){
-//         var element = document.getElementById('searchInput');
-//         element.classList.toggle('active'); 
-//     }
-</script>
+
 
   
 
