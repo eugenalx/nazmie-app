@@ -35,11 +35,13 @@ Route::get("/contactus", function(){
 //     return view("authPages/login");
 // })->name("password.request");
 
-Auth::routes();
+// Auth::routes();
 
-Route::get('/login', [LoginController::class, 'login']) ->name('login');
+// Route::get('/login', [LoginController::class, 'login']) ->name('login');
 
 Route::get('/register', [RegisterController::class, 'create'])->name('register')->middleware('guest');
 Route::post('/register', [RegisterController::class, 'store'])->middleware('guest');
 
-Route::post("/logout",[sessionController::class, 'destroy']);
+Route::get("/login",[sessionController::class, 'create'])->name('login')->middleware('guest');
+Route::post("/login",[sessionController::class, 'store'])->name('login')->middleware('guest');
+Route::post("/logout",[sessionController::class, 'destroy'])->middleware('auth');

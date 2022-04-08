@@ -10,8 +10,8 @@
         <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Manrope:wght@700;800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Scripts -->
-        {{-- <script src="{{ asset('./js/app.js') }}" defer></script> --}}
-        <script src="/js/app.js" ></script>
+        <script src="{{ asset('./js/app.js') }}" defer></script>
+        {{-- <script src="/js/app.js" ></script> --}}
 
         
     <!-- Styles -->
