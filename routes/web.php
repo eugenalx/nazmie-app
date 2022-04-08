@@ -39,3 +39,4 @@ Auth::routes();
 Route::get('/login', [LoginController::class, 'login']) ->name('login');
 
 Route::get('/register', [RegisterController::class, 'create'])->name('register');
+Route::post('/register', [RegisterController::class, 'store']);
