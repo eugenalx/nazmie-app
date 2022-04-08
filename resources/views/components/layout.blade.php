@@ -306,16 +306,21 @@ input:focus{
                 }               
             }
 
-            h6{
+   
+
+.h6{
     position:  relative;
     color: black;
-    width: 370px;
     margin-top: 0px;
     top: 0px;
     font-family: 'Playfair display';
     font-weight: 400;
-    font-size: 45px;
+    font-size: 1rem;
 }
+.h9{
+    font-size: 0.8rem;
+}
+
 
 .halfhexagon>svg{
     align-content: center;
@@ -357,7 +362,12 @@ input:focus{
                
         
         {{-- <x-pages.footer/> --}}
-    </div>
+    </div >
+    @if (session()->has('succes'))
+        <div class="bg-info col-2 fixed-bottom h9 justify-content-center m-3 mb-3 ms-auto pt-3 px-2 rounded">
+            <p>{{ session('succes') }}</p>
+        </div>
+    @endif
 
     <script>
   

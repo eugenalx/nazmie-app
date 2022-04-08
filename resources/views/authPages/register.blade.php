@@ -79,7 +79,7 @@
         
         <div class="form-group row">
             <div class="col-sm-10 col-md-6 mx-auto  mb-2">
-                <input id="confirmPassword" type="password" class="form-control border-0 border-bottom @error('password') is-invalid @enderror" name="confirmPassword" 
+                <input id="password" type="password" class="form-control border-0 border-bottom @error('password') is-invalid @enderror" name="password_confirmation" 
                 required ="confirm-password" 
                 placeholder ='Confirm Password'>
 

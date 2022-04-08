@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Auth\RegisterController;
+use App\Http\Controllers\sessionController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -28,7 +29,7 @@ Route::get("/about", function(){
 });
 Route::get("/contactus", function(){
     return view("/pages/contact");
-});
+})->middleware('auth');
 
 // Route::get("password.request",function(){
 //     return view("authPages/login");
@@ -38,5 +39,7 @@ Auth::routes();
 
 Route::get('/login', [LoginController::class, 'login']) ->name('login');
 
-Route::get('/register', [RegisterController::class, 'create'])->name('register');
-Route::post('/register', [RegisterController::class, 'store']);
+Route::get('/register', [RegisterController::class, 'create'])->name('register')->middleware('guest');
+Route::post('/register', [RegisterController::class, 'store'])->middleware('guest');
+
+Route::post("/logout",[sessionController::class, 'destroy']);
