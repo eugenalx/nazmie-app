@@ -21,7 +21,7 @@ class sessionController extends Controller
 
         if (auth()->attempt($attributes)){
             session()->regenerate();
-            return redirect('/')->with('succes', 'Welocome Back!');
+            return redirect('/')->with('succes', 'Welcome Back!');
         }
 
         throw ValidationException::withMessages([

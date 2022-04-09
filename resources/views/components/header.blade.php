@@ -54,8 +54,9 @@
                     </div>
                 </div> 
                 <div class="align-items-center justify-content-around d-none d-lg-flex">
-                    <div class="rightHeader searchBarIcon flex-center pointerCursor"   > 
+                    <div id="search" class="rightHeader searchBarIcon flex-center pointerCursor"   > 
                         <input id="searchInput1" class="bg-white" type="text" placeholder="search...">
+                     
                         <i class="fa-solid fa-magnifying-glass" 
                          onclick="searchInputFocus1()"
                          ></i> 
@@ -67,18 +68,7 @@
             </div>
          </nav>
 
-  <script>
 
-// window.searchInputFocus =  function(){
-//   var element = document.getElementById('searchInput');
-//   element.classList.toggle('active'); 
-// };
-
-// window.searchInputFocus1 =  function(){
-//   var element = document.getElementById('searchInput1');
-//   element.classList.toggle('active'); 
-// };
-  </script>
 
 
 
