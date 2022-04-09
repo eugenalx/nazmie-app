@@ -2,10 +2,78 @@
 html,
 body {
   font-family: "Helvetica neue", "Playfair Display", Manrope;
-  font-size: 25px;
+  background-color: #fff;
+  color: #636b6f;
+  font-size: 23px;
+  font-weight: 300;
+  width: 100vw;
   margin: 0;
   padding: 0;
 }
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+//font size
+
+.h1{
+  font-size: 1.8rem;
+}
+.h5{
+  font-size: 0.8rem;
+}
+.h6{
+  font-size:0.7rem;
+}
+
+
+.searchBarIcon{
+  font-size: 0.9rem;
+  border-radius: 10px;
+}
+
+.rightHeader  input{
+  display: none;
+  width: 200px;
+  border: none;
+  font-size: 16px;
+  color: gray;
+  transform: translateX(100%) scaleX(0);
+  border-radius: 15px;
+  padding: 10px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid gray;
+  margin-right: 15px;
+}
+input:focus{
+outline:none;
+}
+
+
+.rightHeader{
+  margin-right: 30px;
+}
+
+.active{
+  display: block !important;
+  animation: searchBar 1s ease-in-out;
+  animation-fill-mode: both;
+}
+@keyframes searchBar {
+      0%{
+          transform: translateX(100%) scaleX(0);
+      }
+      100%{
+          transform: translate(0%) scale(1);
+      }
+  }
+
+  .pointerCursor{
+      cursor: pointer;
+  }
+
 
 #navbar {
   font-family: Manrope;
@@ -52,6 +120,9 @@ body {
   text-decoration: none;
   letter-spacing: 0.3px;
   color: black;
+  font-size: 19px;
+  font-weight: initial;
+  text-decoration: none;
 }
 
 .dropdown-list > a {
@@ -60,7 +131,9 @@ body {
   letter-spacing: 0.3px;
   color: black;
 }
-
+.dropdown:hover>a{
+  color: red;
+}
 .dropdown a:hover {
   color: red;
 }
@@ -69,18 +142,32 @@ body {
   color: blue;
 }
 
+
+.dropdown-staple {
+  font-family: 'Manrope';
+  position: absolute;
+  display: none;
+  /* width:150px; */
+  text-align: left;
+  line-height: 20px;
+  background-color: #ebecf0;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 0 5px 0px 10px;
+  z-index: 1;
+  text-decoration: none;;
+
+}
+
 .loginbuttons {
   position: relative;
   font-family: "Playfair display";
   font-style: italic;
   text-align: right;
-  margin-right: 130px;
+  // margin-right: 130px;
 }
 
 .loginimg {
-  position: relative;
-  width: 20%;
-  top: 10px;
+  position: relative;  
 }
 
 .loginbuttons > a {
@@ -94,6 +181,19 @@ body {
 .loginbuttons:hover {
   opacity: 0.5;
 }
+
+.login-buttons > a {
+  font-size: 80%;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: #000;
+  }
+  .login-buttons-sm > a {
+  font-size: 60%;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: #000;
+  }
 
 #footer {
   font-family: "Manrope";
@@ -493,23 +593,8 @@ h6 {
 }
 
 
-html, body {
-  background-color: #fff;
-  color: #636b6f;
-  font-family: 'Playfair Display', sans-serif;
-  font-weight: 400;
-  width: 100vw;
-  margin: 0; padding: 0%
-}
-/* .full-height {
-  height: 80vh;
-} */
 
-.flex-center {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+
 
 img {
   width: 100%;
@@ -518,7 +603,6 @@ img {
   margin-left: auto;
   display: block;
 }
-/* display: block; eliminates default white space*/
 
 figure {
   margin: 0;
@@ -549,46 +633,11 @@ figure {
   font-size: 70px;
 }
 
-.m-b-md {
-  /* margin-bottom: 30px; */
-}
-
 .dropdown {
   position: relative;
   display: inline;
   font-size: 0.9em;
   padding-bottom: 0;
-}
-
-.dropdown>a {
-  color: #000000;
-  padding: 0 28px;
-  /* margin-top: 25px; */
-  font-size: 19px;
-  font-weight: initial;
-  text-decoration: none;
-  
-}
-
-.dropdown:hover>a{
-  color: red;
-  
-  
-}
-
-.dropdown-staple {
-  
-  font-family: 'Manrope';
-  position: absolute;
-  display: none;
-  /* width:150px; */
-  text-align: left;
-  line-height: 20px;
-  background-color: #ebecf0;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  padding: 0 5px 0px 10px;
-  z-index: 1;
-
 }
 
 .dropdown:hover .dropdown-staple {
@@ -604,35 +653,6 @@ img:hover{
   color: orange;
 }
 
-.login-buttons {
-  position: relative;
-  font-family: "Playfair display";
-  font-style: italic;
-  text-align: right;
-}
-
-.loginimg {
-position: relative;
-width: 25px;
-top: 10px;
-padding-bottom: 10px;
-}
-
-
-.login-buttons > a {
-font-size: 80%;
-letter-spacing: 1px;
-
-text-decoration: none;
-color: #000;
-}
-.login-buttons-sm > a {
-font-size: 60%;
-letter-spacing: 1px;
-text-decoration: none;
-color: #000;
-}
-
 .overlay .closebtn {
   position: absolute;
   top: 20px;
@@ -645,22 +665,6 @@ top: 20px;
 right: 45px;
 font-size: 60px;
 }
-
-.loginSlide{
-/* width: 100px; */
-background: rebeccapurple;
-animation: "mymove" 2s infinite;
-}
-@keyframes mymove {
-from {left: -30px;}
-to {left: 300px;}
-}
-.custom-card-login{
-  font-size: 0.8rem;
-  color: #6c757d;
-  font-family: "Playfair Display";
-  }
-
 
 .form-control::placeholder {
   color: #6c757d;
@@ -689,55 +693,7 @@ to {left: 300px;}
   background-size: 100%;
   
   }
-  .dropdown-staple a{
-      text-decoration: none;
-  }
-
-  .searchBarIcon{
-       /* border: 2px solid black; */
-      ;                
-      border-radius: 10px;
-  }
-
-   .rightHeader  input{
-      width: 200px;
-      border: none;
-      font-size: 16px;
-      color: gray;
-      transform: translateX(100%) scaleX(0);
-      border-radius: 15px;
-      padding: 10px;
-      padding-bottom: 12px;
-      border-bottom: 1px solid gray;
-      margin-right: 15px;
-  }
-input:focus{
-outline:none;
-}
-  
-
-  .rightHeader{
-      margin-right: 30px;
-  }
-
-  .active{
-      display: block;
-      animation: searchBar 1s ease-in-out;
-      animation-fill-mode: both;
-   }
-  @keyframes searchBar {
-          0%{
-              transform: translateX(100%) scaleX(0);
-          }
-          100%{
-              transform: translate(0%) scale(1);
-          }
-      }
-
-      .pointerCursor{
-          cursor: pointer;
-      }
-
+ 
       .aboutText{
           font-family: 'Playfair Display';
           font-size: 20px;
@@ -750,10 +706,6 @@ outline:none;
           margin-left: 15px;
           font-weight: 600;
       }
-
-
-  
-
 
 @media screen and (min-width:990px){
   .stickyHeader{
@@ -791,7 +743,7 @@ font-weight: 400;
 font-size: 1rem;
 }
 .h9{
-font-size: 0.8rem;
+font-size: 0.7rem;
 }
 
 

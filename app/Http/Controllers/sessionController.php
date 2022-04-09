@@ -10,9 +10,7 @@ class sessionController extends Controller
 {
 
     public function create(){
-        
         return view("authPages/login");
- 
     }
 
     public function store(){

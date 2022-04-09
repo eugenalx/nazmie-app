@@ -17,6 +17,13 @@
     <!-- Styles -->
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
+        <style>
+            .form-check-label{
+                color: inherit;
+                font-size: 15px;
+            }
+        </style>
+
 </head>
 
 <body >

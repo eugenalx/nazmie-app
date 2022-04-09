@@ -34,11 +34,11 @@
             </div>
 
             <div class="form-group row">
-                <div class="col-sm-10 col-md-6 mx-auto ">
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
+                <div class="col-sm-10 col-md-6 mx-auto">
+                    <div class="form-check d-flex align-items-end">
+                        <input class="form-check-input " type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
 
-                        <label class="form-check-label" for="remember">
+                        <label class="form-check-label ms-1" for="remember">
                             {{ __('Remember Me') }}
                         </label>
                     </div>
@@ -67,10 +67,6 @@
                     @endif
                 </div>
             </div>
-        
         </form>
     </div>
-
-
-
 </x-layout>

@@ -1,11 +1,7 @@
-{{-- <x-layout>
-    <x-slot name="header">
-        hellothere
-    </x-slot>
-</x-layout> --}}
+
 
         <nav class="navbar navbar-expand-lg navbar-light bg-white d-lg-flex flex-center p-2 ">
-            <div class=" col-12  d-flex d-lg-none  justify-content-between px-3">
+            <div class=" col-12 d-flex d-lg-none  justify-content-between px-3">
                 <button class="navbar-toggler align-self-center  col-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <div class="navbar-toggler-icon d-block  "></div>
                 </button>
@@ -22,7 +18,7 @@
             </div> 
 
             <div class="col-12 px-4 collapse navbar-collapse d-flex" id="navbarNavDropdown">
-                    <div class="offset-2 col-8 collapse navbar-collapse mx-auto " id="navbarNavDropdown">
+                    <div class="col-8 collapse navbar-collapse py-3 " id="navbarNavDropdown">
                     <div class=" navbar-nav">
                         <div class="dropdown nav-item d-flex align-items-center">
                             <a class="" href="/" >Home</a>
@@ -58,7 +54,7 @@
                     </div>
                 </div> 
                 <div class="align-items-center justify-content-around d-none d-lg-flex">
-                    <div class="rightHeader searchBarIcon flex-center pointerCursor"  " > 
+                    <div class="rightHeader searchBarIcon flex-center pointerCursor"   > 
                         <input id="searchInput1" class="bg-white" type="text" placeholder="search...">
                         <i class="fa-solid fa-magnifying-glass" 
                          onclick="searchInputFocus1()"
