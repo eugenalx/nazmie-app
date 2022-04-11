@@ -29,7 +29,7 @@ Route::get("/about", function(){
 });
 Route::get("/contactus", function(){
     return view("/pages/contact");
-})->middleware('auth');
+});
 
 // Route::get("password.request",function(){
 //     return view("authPages/login");

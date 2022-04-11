@@ -18,10 +18,8 @@
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
         <style>
-            .form-check-label{
-                color: inherit;
-                font-size: 15px;
-            }
+           
+         
         </style>
 
 </head>
@@ -50,28 +48,6 @@
     @endif
 
     <script>
-        //  $(document).ready(function(){
-        //             // window.fadeOutMessage = $("#show").delay(4000).fadeOut(1000);
-
-        //             // let elem = document.getElementById('searchInput1');                        
-        //             //     // console.log(elem.classList);
-        //             //     // if ( !elem.classList.contains('active')){
-        //             //     //     console.log(elem.classList);
-        //                  $(window).on('scroll', function(){
-        //             //             $('#searchInput1').removeClass('active');
-        //             //          });
-        //                 // };
-        //                 // if ($(this).scrollTop() > 1000){
-        //                 //     $('#searchInput1').removeClass('active');
-        //                 // }
-        //                 $('#searchInput1').removeClass('active');
-        //                 // $('#searchInput').removeClass('active');
-        //             });
-        // });
-        
-// fadeOutMessage();
-// test();
-
 
     </script>
 

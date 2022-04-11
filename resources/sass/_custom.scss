@@ -34,6 +34,11 @@ body {
   border-radius: 10px;
 }
 
+.rightHeader{
+  // margin-right: 30px;
+  min-width: 15%;
+}
+
 .rightHeader  input{
   display: none;
   width: 200px;
@@ -52,9 +57,7 @@ outline:none;
 }
 
 
-.rightHeader{
-  margin-right: 30px;
-}
+
 
 .active{
   display: block !important;
@@ -86,7 +89,7 @@ outline:none;
 .dropdown {
   position: relative;
   display: inline;
-  font-size: 0.9em;
+  font-size: 1.1rem;
   padding-bottom: 0;
 }
 
@@ -114,19 +117,20 @@ outline:none;
 
 .dropdown > a {
   list-style-type: none;
-  font-size: 0.84em;
+  font-size: 0.9rem;
   padding-left: 5px;
   padding-right: 57px;
   text-decoration: none;
   letter-spacing: 0.3px;
   color: black;
-  font-size: 19px;
   font-weight: initial;
   text-decoration: none;
+  font-variant: small-caps;
+  letter-spacing: 2px;
+  font-style: italic;
 }
 
 .dropdown-list > a {
-  font-size: 0.84em;
   text-decoration: none;
   letter-spacing: 0.3px;
   color: black;
@@ -541,60 +545,37 @@ input::placeholder {
   margin-left: auto;
   margin-right: auto;
 }
+.pgr{
+  position: relative;
+}
 
-.halfhexagon {
+.halfhexagon{
   position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
+  padding: 0 !important;
   height: 250px;
   width: auto;
-  padding: 100px;
   fill: white;
   stroke: white;
   stroke-width: 0;
 }
 
-h6 {
-  position: absolute;
-  color: black;
-  width: 370px;
-  margin-top: 0px;
-  top: 0px;
-  margin-left: 0;
-  font-family: "Playfair display";
-  font-weight: 400;
-  font-size: 45px;
+.contactTitle {
+position: relative;
+color: black;
+margin: 0 auto;
+font-family: "Playfair display";
+font-weight: 400;
+font-size: 1.5rem;
+text-align: center;
 }
 
-.halfhexagon > svg {
-  position: absolute;
-  align-content: center;
-  margin: 0;
-  width: 370px;
-  height: 250px;
+.contactTitle li{
+font-size: 1rem;
+list-style: none;
 }
-
-.halfhexagon > ol {
-  position: absolute;
-  color: black;
-  width: 370px;
-  margin-left: -40px;
-  margin-right: 0;
-  margin-top: 70px;
-  list-style-type: none;
-  font-family: "Caudex";
-  font-weight: 400;
-  font-size: 20px;
-}
-
-.halfhexagon ol li {
-  position: absolute;
-  line-height: 35px;
-  margin-left: 0;
-  padding-left: 0px;
-}
-
-
-
-
 
 img {
   width: 100%;
@@ -633,12 +614,6 @@ figure {
   font-size: 70px;
 }
 
-.dropdown {
-  position: relative;
-  display: inline;
-  font-size: 0.9em;
-  padding-bottom: 0;
-}
 
 .dropdown:hover .dropdown-staple {
   
@@ -747,28 +722,8 @@ font-size: 0.7rem;
 }
 
 
-.halfhexagon>svg{
-align-content: center;
-width: 370px; 
-height: 250px;
-}
-
-.halfhexagon>ol{
-position: relative;
-color: black;
-width: 370px;
-margin-left: -40px;
-margin-right: 0;
-margin-top: 70px;
-list-style-type: none;
-font-family: 'Caudex';
-font-weight: 400;
-font-size: 20px;
-}
-
-.halfhexagon ol li{
-line-height: 35px;
-margin-left: 0;
-padding-left: 0px;
+.form-check-label{
+  color: inherit;
+  font-size: 15px;
 }
 

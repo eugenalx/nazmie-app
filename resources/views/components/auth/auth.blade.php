@@ -1,31 +1,29 @@
-<div class="col-2">
+
        
     
-    <div class=" align-self-center d-flex">
+    <div class="d-flex align-items-center justify-content-between "> 
+        <div class="rightHeader searchBarIcon flex-center pointerCursor " > 
+            <input id="searchInput" class="bg-white" type="text" placeholder="search...">
+            <i class="fa-solid fa-magnifying-glass " onclick="searchInputFocus()"></i> 
+        </div> 
         @if (Route::has('login'))
-        
-        <div class="login-buttons-sm login-buttons mx-auto text-center" style="font-family: Times New Roman">
+        <div class="login-buttons-sm login-buttons mx-auto text-center d-flex justify-content-around" style="font-family: Times New Roman">
                 @auth
-                <div class="flex-center">
-                    <span href="{{ url('/') }}" class="col-10 h9">Welcome {{ auth()->user()->firstName }}!</span>
+                    <div href="{{ url('/') }}" class="h9">Hi, {{ auth()->user()->firstName }}!</div>
                     <form method="POST" action="/logout" class="mb-0">
                     @csrf
                         <button type="submit" class="btn col-5 flex-center">
                             <i class="fa-arrow-right-from-bracket fa-solid p-1"></i>
                         </button>
                     </form>
-                </div>
                 @else
-                <div class="rightHeader searchBarIcon">
+                <div class="searchBarIcon d-flex mx-3">
                     <a href="{{ route('login') }}" class="text-center" style="color: black">
                         <i class="fa-solid fa-circle-user"></i>
-                        {{-- <img class="loginimg" src="/images/loginbtn1.png" /> --}}
-                        {{-- Log In --}}
                     </a>
                 </div>
-                  
                 @endauth
             </div>
         @endif
     </div>
-</div>
+
