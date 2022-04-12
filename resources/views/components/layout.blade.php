@@ -33,11 +33,8 @@
         <div class="stickyHeader" >
             <x-header />
         </div>
-
         {{ $slot }}
-
         {{-- <x-pages.footer/> --}}
-
     </div >
 
     @if (session()->has('succes'))

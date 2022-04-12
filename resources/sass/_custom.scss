@@ -117,7 +117,7 @@ outline:none;
 
 .dropdown > a {
   list-style-type: none;
-  font-size: 0.9rem;
+  font-size: 1rem;
   padding-left: 5px;
   padding-right: 57px;
   text-decoration: none;
@@ -365,8 +365,6 @@ h3 {
 }
 
 h4 {
-  margin: 20px 0 20px 0;
-  text-align: center;
   font-family: "Cormorant garamond";
   font-weight: 300;
   font-style: italic;
@@ -413,27 +411,23 @@ h5 {
   line-height: 15px;
 }
 
-.subscribe {
-  display: block;
-  width: 1200px;
-  padding-left: 100px;
-  margin: 200px auto 0px auto;
-}
-
 .email {
   display: flex;
-  margin-right: 250px;
-  border-bottom: solid;
+  align-items: center;
+  //margin-right: 250px;
+  //border-bottom: solid;
 }
 
-.email > img {
-  width: 2%;
-  padding: 20px 5px 10px 15px;
-}
+// .email > img {
+//   width: 2%;
+//   padding: 20px 5px 10px 15px;
+// }
 
 .email > input {
   color: black;
-  border: 0;
+  border: 0;;
+  border-bottom: 1px solid grey;
+  border-radius: 20px;
   padding: 10px 0 0px 20px;
   margin-left: 10px;
   width: 100%;
@@ -524,7 +518,7 @@ input::placeholder {
 
 .contactred {
   height: 500px;
-  width: 100%;
+  //width: 100%;
   background-image: url(/images/contactred.png);
   clear: left;
   background-attachment: fixed;
@@ -535,16 +529,16 @@ input::placeholder {
 
 .program {
   position: relative;
-  width: 80%;
-  margin: 100px auto 50px auto;
+  
 }
 
-.program > img {
-  width: 100%;
-  height: 500px;
-  margin-left: auto;
-  margin-right: auto;
-}
+// .program > img {
+//   width: 100%;
+//   height: 500px;
+//   margin-left: auto;
+//   margin-right: auto;
+// }
+
 .pgr{
   position: relative;
 }
@@ -562,20 +556,32 @@ input::placeholder {
   stroke-width: 0;
 }
 
+
+
+.halfhexagon > svg {
+  position: absolute;
+  align-content: center;
+  margin: 0;
+  width: 370px;
+  height: 250px;
+}
+
 .contactTitle {
-position: relative;
-color: black;
-margin: 0 auto;
-font-family: "Playfair display";
-font-weight: 400;
-font-size: 1.5rem;
-text-align: center;
+  position: relative;
+  color: black;
+  margin: 0 auto;
+  font-family: "Playfair display";
+  font-weight: 400;
+  font-size: 1.5rem;
+  text-align: center;
 }
 
 .contactTitle li{
-font-size: 1rem;
-list-style: none;
+  font-size: 1rem;
+  list-style: none;
 }
+
+
 
 img {
   width: 100%;
@@ -614,6 +620,12 @@ figure {
   font-size: 70px;
 }
 
+.dropdown {
+  position: relative;
+  display: inline;
+  font-size: 9rem;
+  padding-bottom: 0;
+}
 
 .dropdown:hover .dropdown-staple {
   
@@ -706,8 +718,6 @@ font-size: 60px;
       }               
   }
 
-
-
 .h6{
 position:  relative;
 color: black;
@@ -727,3 +737,8 @@ font-size: 0.7rem;
   font-size: 15px;
 }
 
+.services{
+  color: darkslategray;
+
+  
+}

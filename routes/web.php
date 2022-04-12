@@ -30,6 +30,9 @@ Route::get("/about", function(){
 Route::get("/contactus", function(){
     return view("/pages/contact");
 });
+Route::get("/services", function(){
+    return view("/pages/services");
+});
 
 // Route::get("password.request",function(){
 //     return view("authPages/login");
