@@ -8,6 +8,7 @@
                         <div class="dropdown nav-item d-flex align-items-center">
                             <a class="" href="/" >Home</a>
                         </div>
+                        
                         <div class="dropdown nav-item d-flex align-items-center">
                             <a href="about" >About us</a>
                         </div>

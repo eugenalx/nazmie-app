@@ -6,6 +6,8 @@ import 'jquery-ui/ui/widgets/datepicker.js';
 require('./bootstrap');
 
 
+// React components
+ require('./components/react');
 
 $(function(){
   //session message
