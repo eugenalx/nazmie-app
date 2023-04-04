@@ -17,7 +17,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('pages/homepage');
+    return view('pages/homepage.blade');
 });
 
 Route::get("login",function(){

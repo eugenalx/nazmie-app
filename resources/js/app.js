@@ -7,7 +7,7 @@ require('./bootstrap');
 
 
 // React components
- require('./components/react');
+//  require('./components/react');
 
 $(function(){
   //session message
