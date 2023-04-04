@@ -49,6 +49,6 @@ Route::get("/services", function(){
 Route::get('/register', [RegisterController::class, 'create'])->name('register')->middleware('guest');
 Route::post('/register', [RegisterController::class, 'store'])->middleware('guest');
 
-Route::get("/login",[sessionController::class, 'create'])->name('login')->middleware('guest');
-Route::post("/login",[sessionController::class, 'store'])->name('login')->middleware('guest');
+// Route::get("/login",[sessionController::class, 'create'])->name('login')->middleware('guest');
+// Route::post("/login",[sessionController::class, 'store'])->name('login')->middleware('guest');
 Route::post("/logout",[sessionController::class, 'destroy'])->middleware('auth');
