@@ -20,12 +20,9 @@ use Illuminate\Support\Facades\Route;
 //     return view('pages/homepage');
 // });
 
-Route::domain('https://nazmie-app.herokuapp.com/')->get('/', function () {
-    return view('pages/homepage');
+Route::get('/', function () {
+    return view('homepage');
 });
-// Route::get('/', function () {
-//     return view('homepage');
-// });
 
 Route::get("login",function(){
     return view("authPages/login");
