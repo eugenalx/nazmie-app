@@ -16,13 +16,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::get('/', function () {
-//     return view('pages/homepage');
-// });
-
 Route::get('/', function () {
-    return view('homepage');
-});
+    return view('pages/homepage');
+})->name('pages.homepage');
+
+// Route::get('/', function () {
+//     return view('homepage');
+// })->name('pages.homepage');
 
 Route::get("login",function(){
     return view("authPages/login");
@@ -30,7 +30,7 @@ Route::get("login",function(){
 
 Route::get("/about", function(){
     return view("pages/about");
-});
+})->name('pages.about');
 Route::get("/contactus", function(){
     return view("pages/contact");
 });
