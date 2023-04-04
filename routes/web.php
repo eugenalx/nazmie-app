@@ -20,7 +20,7 @@ use Illuminate\Support\Facades\Route;
 //     return view('pages/homepage');
 // });
 Route::get('/', function () {
-    return view('homepage');
+    return view('pages//homepage');
 });
 
 Route::get("login",function(){
@@ -28,13 +28,13 @@ Route::get("login",function(){
 })->name("login");
 
 Route::get("/about", function(){
-    return view("pages\/about");
+    return view("pages/about");
 });
 Route::get("/contactus", function(){
-    return view("/pages/contact");
+    return view("pages/contact");
 });
 Route::get("/services", function(){
-    return view("/pages/services");
+    return view("pages/services");
 });
 
 // Route::get("password.request",function(){
