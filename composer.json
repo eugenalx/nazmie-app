@@ -42,7 +42,7 @@
             "@php artisan route:cache",
             "@php artisan event:cache",
             "@php artisan view:cache"
-        ]
+        ],
         "post-update-cmd": [
             "@php artisan vendor:publish --tag=laravel-assets --ansi --force"
         ],
