@@ -24,9 +24,9 @@ Route::get('/', function () {
 //     return view('homepage');
 // })->name('pages.homepage');
 
-Route::get("login",function(){
-    return view("authPages/login");
-})->name("login");
+// Route::get("login",function(){
+//     return view("authPages/login");
+// })->name("login");
 
 Route::get("/about", function(){
     return view("about")->name('about');
