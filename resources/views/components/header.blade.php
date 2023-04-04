@@ -10,7 +10,7 @@
                         </div>
                         
                         <div class="dropdown nav-item d-flex align-items-center">
-                            <a href={{  route('pages.about') }} >About us</a>
+                            <a href='/about' >About us</a>
                         </div>
                         <div class="dropdown nav-item d-flex align-items-center">
                             <a href="services">Services</a>
