@@ -6,7 +6,7 @@
                 <div class="col-8 collapse navbar-collapse py-3 " id="navbarNavDropdown">
                     <div class=" navbar-nav d-flex text-center">
                         <div class="dropdown nav-item d-flex align-items-center">
-                            <a class="" href={{ route('pages.homepage')}} >Home</a>
+                            <a class="" href='/' >Home</a>
                         </div>
                         
                         <div class="dropdown nav-item d-flex align-items-center">
