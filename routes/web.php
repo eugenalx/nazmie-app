@@ -28,7 +28,7 @@ Route::get("login",function(){
 })->name("login");
 
 Route::get("/about", function(){
-    return view("/pages/about");
+    return view("pages\/about");
 });
 Route::get("/contactus", function(){
     return view("/pages/contact");
