@@ -4,7 +4,6 @@ use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\sessionController;
 use Illuminate\Support\Facades\Route;
-use Illuminate\Support\Facades\View;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,8 +17,8 @@ use Illuminate\Support\Facades\View;
 */
 
 Route::get('/', function () {
-    return View::make('pages.homepage');
-});
+    return view('homepage');
+})->name('homepage');
 
 // Route::get('/', function () {
 //     return view('homepage');
@@ -30,13 +29,13 @@ Route::get("login",function(){
 })->name("login");
 
 Route::get("/about", function(){
-    return view("pages/about");
-})->name('pages.about');
+    return view("about")->name('about');
+});
 Route::get("/contactus", function(){
-    return view("pages/contact");
+    return view("contact");
 });
 Route::get("/services", function(){
-    return view("pages/services");
+    return view("services");
 });
 
 // Route::get("password.request",function(){
